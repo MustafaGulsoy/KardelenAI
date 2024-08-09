@@ -181,5 +181,3 @@ CORS_ALLOW_CREDENTIALS = True
 
 DATA_UPLOAD_MAX_MEMORY_SIZE = 104857600  # 100 MB in bytes
 
-
-print(os.getenv('SECRET_KEY', 'fallback-secret-key'))

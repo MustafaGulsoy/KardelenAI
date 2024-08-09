@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7382c8f-403a-4520-9021-c0acc3d12b5b" name="Changes" comment="Deleting databases">
+    <list default="true" id="b7382c8f-403a-4520-9021-c0acc3d12b5b" name="Changes" comment="Setting change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechToText/Utils/speech_to_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechToText/Utils/speech_to_text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/middlewares/AuthMiddleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/middlewares/AuthMiddleware.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/output.mp3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,30 +135,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713394099913</updated>
-    </task>
-    <task id="LOCAL-00016" summary="For tiktok 9">
-      <option name="closed" value="true" />
-      <created>1713461299521</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1713461299521</updated>
-    </task>
-    <task id="LOCAL-00017" summary="For tiktok 9">
-      <option name="closed" value="true" />
-      <created>1713461332666</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1713461332666</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Commit all">
-      <option name="closed" value="true" />
-      <created>1713976650137</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1713976650137</updated>
     </task>
     <task id="LOCAL-00019" summary="Commit all">
       <option name="closed" value="true" />
@@ -529,7 +504,31 @@
       <option name="project" value="LOCAL" />
       <updated>1723188469061</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Deleting databases">
+      <option name="closed" value="true" />
+      <created>1723202654133</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1723202654133</updated>
+    </task>
+    <task id="LOCAL-00066" summary="ahnging requerement.txt">
+      <option name="closed" value="true" />
+      <created>1723202979669</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1723202979669</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Setting change">
+      <option name="closed" value="true" />
+      <created>1723203233383</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1723203233383</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -544,8 +543,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test 6" />
-    <MESSAGE value="For tiktok" />
     <MESSAGE value="For tiktok 2" />
     <MESSAGE value="For tiktok 3" />
     <MESSAGE value="For tiktok 4" />
@@ -569,7 +566,9 @@
     <MESSAGE value="Optimize code" />
     <MESSAGE value="IIS Test-1" />
     <MESSAGE value="Deleting databases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleting databases" />
+    <MESSAGE value="ahnging requerement.txt" />
+    <MESSAGE value="Setting change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setting change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -598,11 +597,6 @@
           <url>file://$PROJECT_DIR$/blog/views.py</url>
           <line>6</line>
           <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main/middlewares/AuthMiddleware.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Teeth/Utils/utils.py</url>

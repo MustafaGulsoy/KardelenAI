@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 from pathlib import Path
 
-from decouple import config
+
 from django.conf import settings
 from django.core.management.utils import get_random_secret_key
 
@@ -181,5 +181,5 @@ CORS_ALLOW_CREDENTIALS = True
 
 DATA_UPLOAD_MAX_MEMORY_SIZE = 104857600  # 100 MB in bytes
 
-print(config('SECRET_KEY', default="2"))
+
 print(os.getenv('SECRET_KEY', 'fallback-secret-key'))

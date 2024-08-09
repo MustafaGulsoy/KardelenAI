@@ -93,32 +93,32 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'main.wsgi.application'
 
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-DEVELOPMENT_MODE = True  # True For local, false for server
-if DEVELOPMENT_MODE:
-    DATABASES = {
-        "default": {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'mudhis',
-            'USER': 'root',
-            'PASSWORD': 'aaaa',
-            'HOST': 'localhost',  # Or your database host
-            'PORT': '3306',  # Or your database port
-        }
-    }
-else:
-    DATABASES = {
-        "default": {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'MustafaGulsoy$mudhis',
-            'USER': 'MustafaGulsoy',
-            'PASSWORD': 'aaaaaaaa',
-            'HOST': 'MustafaGulsoy.mysql.pythonanywhere-services.com',  # Or your database host
-            'PORT': '3306',  # Or your database port
-        }
-    }
+# # Database
+# # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+#
+# DEVELOPMENT_MODE = True  # True For local, false for server
+# if DEVELOPMENT_MODE:
+#     DATABASES = {
+#         "default": {
+#             'ENGINE': 'django.db.backends.mysql',
+#             'NAME': 'mudhis',
+#             'USER': 'root',
+#             'PASSWORD': 'aaaa',
+#             'HOST': 'localhost',  # Or your database host
+#             'PORT': '3306',  # Or your database port
+#         }
+#     }
+# else:
+#     DATABASES = {
+#         "default": {
+#             'ENGINE': 'django.db.backends.mysql',
+#             'NAME': 'MustafaGulsoy$mudhis',
+#             'USER': 'MustafaGulsoy',
+#             'PASSWORD': 'aaaaaaaa',
+#             'HOST': 'MustafaGulsoy.mysql.pythonanywhere-services.com',  # Or your database host
+#             'PORT': '3306',  # Or your database port
+#         }
+#     }
 # elif len(sys.argv) > 0 and sys.argv[1] != 'collectstatic':
 #     if os.getenv("DATABASE_URL", None) is None:
 #         raise Exception("DATABASE_URL environment variable not defined")

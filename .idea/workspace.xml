@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7382c8f-403a-4520-9021-c0acc3d12b5b" name="Changes" comment="IIS Test-1">
+    <list default="true" id="b7382c8f-403a-4520-9021-c0acc3d12b5b" name="Changes" comment="Deleting databases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechToText/Utils/speech_to_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechToText/Utils/speech_to_text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/output.mp3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,28 +36,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Python.KardelenAI.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.Mudhis.executor&quot;: &quot;Run&quot;,
-    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
-    &quot;Python.process_tooth_x_ray.executor&quot;: &quot;Run&quot;,
-    &quot;Python.serializers.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.settings.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/inetpub/wwwroot/KardelenAI&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python.KardelenAI.executor": "Run",
+    "Python.Mudhis.executor": "Run",
+    "Python.manage.executor": "Run",
+    "Python.process_tooth_x_ray.executor": "Run",
+    "Python.serializers.executor": "Debug",
+    "Python.settings.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/inetpub/wwwroot/KardelenAI",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projeler\Bussines\KardelenYazilim\Projeler\Python\KardelenAI\Commons\Resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\inetpub\wwwroot\KardelenAI\Commons" />
       <recent name="C:\Projeler\Bussines\KardelenYazilim\Projeler\Python\KardelenAI\Commons\Models" />
       <recent name="C:\Projeler\Bussines\KardelenYazilim\Projeler\Python\KardelenAI\Commons\Dtos\Teeth" />
       <recent name="C:\Projeler\Pyhton\Mudhis-DigitalOcean\users" />
@@ -69,6 +72,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="Secret_Key" value="1234" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="SDK_NAME" value="Python 3.10 (KardelenAI)" />
@@ -107,6 +111,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.KardelenAI" />
+      <item itemvalue="Python.process_tooth_x_ray" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.process_tooth_x_ray" />
@@ -128,14 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713394099913</updated>
-    </task>
-    <task id="LOCAL-00015" summary="For tiktok 8">
-      <option name="closed" value="true" />
-      <created>1713460272500</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1713460272500</updated>
     </task>
     <task id="LOCAL-00016" summary="For tiktok 9">
       <option name="closed" value="true" />
@@ -521,7 +521,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722839165215</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Deleting databases">
+      <option name="closed" value="true" />
+      <created>1723188469059</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1723188469061</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,7 +544,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test 5" />
     <MESSAGE value="Test 6" />
     <MESSAGE value="For tiktok" />
     <MESSAGE value="For tiktok 2" />
@@ -561,7 +568,8 @@
     <MESSAGE value="Bir hata var anlamadım?" />
     <MESSAGE value="Optimize code" />
     <MESSAGE value="IIS Test-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="IIS Test-1" />
+    <MESSAGE value="Deleting databases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleting databases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

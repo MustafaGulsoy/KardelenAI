@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 from pathlib import Path
 
+from decouple import config
 from django.conf import settings
 from django.core.management.utils import get_random_secret_key
 
@@ -178,6 +179,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap5'
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
+DATA_UPLOAD_MAX_MEMORY_SIZE = 104857600  # 100 MB in bytes
 
-class Params:
-    SECRET_KEY = 'secret'
+print(config('SECRET_KEY', default="2"))
+print(os.getenv('SECRET_KEY', 'fallback-secret-key'))

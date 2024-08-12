@@ -38,9 +38,9 @@ class ToothXrayAnalysisView(View):
                 'Authorization': authorization_header,
             }
 
-            processed_image, paired_results = await process_xray(image_url,header=headers)
+            paired_results = await process_xray(image_url,header=headers)
             response = {
-                'image_base64': processed_image,
+
                 'result': paired_results
             }
 

@@ -18,7 +18,7 @@ async def process_xray(image_url, header):
     paired_results = []
 
     images = convert_to_png_from_url(image_url.strip(), header)
-
+    i = 0
     for image in images:
 
         numbering_results = numbering_model(image)
@@ -34,15 +34,16 @@ async def process_xray(image_url, header):
             cv2.putText(image, text, (int((x1 + x2) / 2) - 4, int((y1 + y2) / 2)),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
 
-        paired_result = pair_teeth_processes(numbering_keep, process_keep)
-
         _, buffer = cv2.imencode('.jpg', image)
         processed_image = base64.b64encode(buffer).decode('utf-8')
 
+        paired_result = pair_teeth_processes(numbering_keep, process_keep, i)
+        paired_result[i]["image"] = processed_image
         paired_results.append(paired_result)
         processed_images.append(processed_image)
+        i = i + 1
 
-    return processed_images, paired_results
+    return  paired_results
 
 
 class ToothXRayUtil:

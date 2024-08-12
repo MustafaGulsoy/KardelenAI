@@ -10,7 +10,7 @@ def test(base64_token):
     binary_data = base64.b64decode(base64_token)
 
     # output_file_path = 'output.mp3'
-    output_file_path = 'output12.mp3'
+    output_file_path = 'output.mp3'
     with open(output_file_path, 'wb') as binary_file:
         binary_file.write(binary_data)
 

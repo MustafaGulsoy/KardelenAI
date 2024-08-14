@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7382c8f-403a-4520-9021-c0acc3d12b5b" name="Changes" comment="Setting change">
+    <list default="true" id="b7382c8f-403a-4520-9021-c0acc3d12b5b" name="Changes" comment="Changing numberin model with bigger one">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/middlewares/AuthMiddleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/middlewares/AuthMiddleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechToText/Utils/speech_to_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechToText/Utils/speech_to_text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechToText/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechToText/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/output.mp3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,23 +36,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python.KardelenAI.executor": "Run",
-    "Python.Mudhis.executor": "Run",
-    "Python.manage.executor": "Run",
-    "Python.process_tooth_x_ray.executor": "Run",
-    "Python.serializers.executor": "Debug",
-    "Python.settings.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/inetpub/wwwroot/KardelenAI",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python.KardelenAI.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.Mudhis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process_tooth_x_ray.executor&quot;: &quot;Run&quot;,
+    &quot;Python.serializers.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.settings.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/inetpub/wwwroot/KardelenAI&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projeler\Bussines\KardelenYazilim\Projeler\Python\KardelenAI\Commons\Resources" />
@@ -72,11 +73,11 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="Secret_Key" value="1234" />
+        <env name="AUTH_IP" value="https://pacs.konyasm.gov.tr" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.10 (KardelenAI)" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
@@ -135,30 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713394099913</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Commit all">
-      <option name="closed" value="true" />
-      <created>1713976924410</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1713976924410</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Commit all">
-      <option name="closed" value="true" />
-      <created>1713977697205</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1713977697205</updated>
-    </task>
-    <task id="LOCAL-00021" summary="template done!!">
-      <option name="closed" value="true" />
-      <created>1713981171608</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1713981171608</updated>
     </task>
     <task id="LOCAL-00022" summary="Satrting models">
       <option name="closed" value="true" />
@@ -528,7 +505,31 @@
       <option name="project" value="LOCAL" />
       <updated>1723203233383</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Changing bareCode to env values">
+      <option name="closed" value="true" />
+      <created>1723203512995</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1723203512995</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Changing numberin model with bigger one">
+      <option name="closed" value="true" />
+      <created>1723450096972</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1723450096972</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Changing numberin model with bigger one">
+      <option name="closed" value="true" />
+      <created>1723454794766</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1723454794766</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -543,8 +544,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="For tiktok 2" />
-    <MESSAGE value="For tiktok 3" />
     <MESSAGE value="For tiktok 4" />
     <MESSAGE value="For tiktok 5" />
     <MESSAGE value="For tiktok 6" />
@@ -568,7 +567,9 @@
     <MESSAGE value="Deleting databases" />
     <MESSAGE value="ahnging requerement.txt" />
     <MESSAGE value="Setting change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting change" />
+    <MESSAGE value="Changing bareCode to env values" />
+    <MESSAGE value="Changing numberin model with bigger one" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing numberin model with bigger one" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -600,7 +601,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Teeth/Utils/utils.py</url>
-          <line>35</line>
+          <line>36</line>
           <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -623,9 +624,6 @@
       </default-breakpoints>
     </breakpoint-manager>
     <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/Teeth/Utils/utils.py" line="123">
-        <watch expression="numbering_keeps[1][0].names[tooth_id]" />
-      </inline-watch>
       <inline-watch fileUrl="file://$PROJECT_DIR$/Teeth/Utils/process_tooth_x_ray.py" line="31">
         <watch expression="labels[class_id]" />
       </inline-watch>

@@ -22,12 +22,13 @@ def nms(results):
 def nms_tooth_process(results, threshold=0):
     best_results = defaultdict(lambda: (None, -1, None))
     i = 0
-    if len(results[0]) != 0:
+    if len(results) != 0:
         for result in results:
             boxes = result.boxes.xyxy.cpu().numpy()
             confidences = result.boxes.conf.cpu().numpy()
             labels = result.boxes.cls.cpu().numpy()
-            best_results[i] = (result, confidences[i], boxes[i])
+            for i, confidence in enumerate(confidences):
+                best_results[i] = (result, confidence, boxes[i])
 
     return best_results
 
@@ -55,7 +56,7 @@ def pair_teeth_processes(numbering_keeps, process_keeps, index):
 
     multiple_match_processes = ['kopru']
 
-    tooth_results = {index: {
+    tooth_results = {
         "image": "",
         "data": [
             {"teeth_number": 11, 'status': 'Kayıp Diş', "annotations": [], "illness": []},
@@ -90,17 +91,20 @@ def pair_teeth_processes(numbering_keeps, process_keeps, index):
             {"teeth_number": 46, 'status': 'Kayıp Diş', "annotations": [], "illness": []},
             {"teeth_number": 47, 'status': 'Kayıp Diş', "annotations": [], "illness": []},
             {"teeth_number": 48, 'status': 'Kayıp Diş', "annotations": [], "illness": []},
-        ]}}
+        ]}
     # result['result'][0]['teeth_number']
+    for teeth_id, (_, __, ___) in numbering_keeps.items():
+        tooth_results["data"][teeth_id]["status"] = "Sağlam diş"
+
     for process_class_id, (process_result, _, process_box) in process_keeps.items():
         process_center = get_center(process_box)
         process_name = process_result.names[process_class_id]
-        tooth_results[index]["data"][process_class_id]["status"] = "Sağlam diş"
+
         if process_name in multiple_match_processes:
             collisions = detect_collisions((process_name, process_box), numbering_keeps)
             for result in collisions:
                 x1, y1, x2, y2 = result["box_data"]
-                tooth_results[index]["data"][int(result['tooth_id'])].append({
+                tooth_results["data"][int(result['tooth_id'])].append({
                     'process_name': result["process_name"],
                     "x_start": x1,
                     "y_start": y1,
@@ -112,14 +116,12 @@ def pair_teeth_processes(numbering_keeps, process_keeps, index):
             closest_tooth = min(numbering_keeps.items(),
                                 key=lambda t: np.linalg.norm(np.array(process_center) - np.array(get_center(t[1][2]))))
             x1, y1, x2, y2 = process_box
-            tooth_results[index]["data"][closest_tooth[0]]["annotations"].append({
+            tooth_results["data"][closest_tooth[0]]["annotations"].append({
                 'process_name': process_name,
                 "x_start": x1,
                 "y_start": y1,
                 "x_end": x2,
                 "y_end": y2
             })
-
-
 
     return tooth_results

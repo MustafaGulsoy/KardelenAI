@@ -38,12 +38,12 @@ async def process_xray(image_url, header):
         processed_image = base64.b64encode(buffer).decode('utf-8')
 
         paired_result = pair_teeth_processes(numbering_keep, process_keep, i)
-        paired_result[i]["image"] = processed_image
+        paired_result["image"] = processed_image
         paired_results.append(paired_result)
         processed_images.append(processed_image)
         i = i + 1
 
-    return  paired_results
+    return paired_results
 
 
 class ToothXRayUtil:

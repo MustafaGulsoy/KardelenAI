@@ -10,7 +10,7 @@ class AuthMiddleware:
 
     def __call__(self, request):
         # URL of the external API
-
+        print("test")
         # api_url = os.getenv('AUTH_IP', 'fallback-ip') + 'https://pacs.konyasm.gov.tr:30028/gateway/auth/api/v1/Session/isActive'
         api_url = 'https://pacs.konyasm.gov.tr:30028/gateway/auth/api/v1/Session/isActive'
         # 'https://pacs.konyasm.gov.tr:30028/gateway/auth/api/v1/Token'

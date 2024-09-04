@@ -20,7 +20,7 @@ class AuthMiddleware:
             'Authorization': authorization_header,
             'Content-Type': 'application/json',
         }
-
+        print(headers["Authorization"])
         try:
             # Send the GET request to the external API
             response = requests.get(api_url, headers=headers)

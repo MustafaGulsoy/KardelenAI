@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7382c8f-403a-4520-9021-c0acc3d12b5b" name="Changes" comment="Changing Requiremet fileChanging Requiremet file" />
+    <list default="true" id="b7382c8f-403a-4520-9021-c0acc3d12b5b" name="Changes" comment="Changing Requiremet fileChanging Requiremet file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/middlewares/AuthMiddleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/middlewares/AuthMiddleware.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,8 +150,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.KardelenAI" />
-      <item itemvalue="Python.speech_to_text" />
       <item itemvalue="Python.process_tooth_x_ray" />
+      <item itemvalue="Python.speech_to_text" />
       <item itemvalue="Python tests.Python tests for tests.AnalyzeVoiceTest.test_analyze_voice" />
     </list>
     <recent_temporary>
@@ -174,14 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713394099913</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Server done">
-      <option name="closed" value="true" />
-      <created>1714082434301</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1714082434301</updated>
     </task>
     <task id="LOCAL-00027" summary="JWT Done">
       <option name="closed" value="true" />
@@ -567,7 +562,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725364029454</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Changing Requiremet fileChanging Requiremet file">
+      <option name="closed" value="true" />
+      <created>1725372285531</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1725372285531</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

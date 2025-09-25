@@ -12,7 +12,8 @@ class AuthMiddleware:
         # URL of the external API
         print("test")
         # api_url = os.getenv('AUTH_IP', 'fallback-ip') + 'https://pacs.konyasm.gov.tr:30028/gateway/auth/api/v1/Session/isActive'
-        api_url = 'https://pacs.konyasm.gov.tr:30028/gateway/auth/api/v1/Session/isActive'
+        api_url = 'http://localhost:82/api/v1/Session/isActive'
+        # api_url = 'https://pacs.konyasm.gov.tr:30028/gateway/auth/api/v1/Session/isActive'
         # 'https://pacs.konyasm.gov.tr:30028/gateway/auth/api/v1/Token'
         authorization_header = request.META.get('HTTP_AUTHORIZATION')
         # Headers for the API request (if needed)
